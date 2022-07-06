@@ -1,0 +1,29 @@
+@url = "https://localhost:5000/"
+
+
+
+GET http://localhost:5000/tasks HTTP/1.1
+
+###
+GET http://localhost:5000/tasks/62c4aa29225d6b013b276b5b HTTP/1.1
+
+###
+POST http://localhost:5000/tasks HTTP/1.1
+Content-Type: application/json
+
+{
+    "title" : "hackathon3",
+    "description" : "Participate in the hackathon3"
+}
+
+###############
+PUT http://localhost:5000/tasks/62c4b0a888bb36d988c0a90f HTTP/1.1
+Content-Type: application/json
+
+{
+    "title" : "hackathon4",
+    "description" : "Participate in the hackathon"
+}
+###
+
+DELETE  http://localhost:5000/tasks/62c4aa1d225d6b013b276b59 HTTP/1.1
